@@ -1,8 +1,22 @@
 # Filament Claude Agents
 
-Claude Code agents for simplifying and refining Filament PHP code. Improves clarity, consistency, and maintainability while preserving functionality.
+Claude Code plugins for Filament PHP development. Improves clarity, consistency, and maintainability while preserving functionality.
 
-## Available Agents
+## Installation
+
+Install via the Claude Code plugin marketplace:
+
+```bash
+/plugin marketplace add optimacloud/filament-claude-agents
+```
+
+Then install the plugin you want:
+
+```bash
+/plugin marketplace install filament-simplifier
+```
+
+## Available Plugins
 
 ### filament-simplifier
 
@@ -14,21 +28,6 @@ A code refinement specialist for Filament resources, forms, tables, actions, and
 - **Filament v4 conventions** - Heroicon enums, layout components, proper imports
 - **Action simplification** - Uses built-in features like `requiresConfirmation()`
 - **Schema organization** - Groups related fields into logical sections
-
-## Installation
-
-Copy the agent file to your project's `.claude/agents/` directory:
-
-```bash
-mkdir -p .claude/agents
-cp agents/filament-simplifier.md .claude/agents/
-```
-
-Or add as a git submodule:
-
-```bash
-git submodule add git@github.com:optimacloud/filament-claude-agents.git .claude/filament-agents
-```
 
 ## Usage
 
